@@ -214,6 +214,20 @@ namespace game
 
             //OrderBy: Orders the data, but the column selection stays the same.
 
+
+
+            // Average 
+            var averagePrice = games.Average(g => g.Price);
+            Console.WriteLine($"Average Price: {averagePrice}");
+
+            // Max 
+            var maxPrice = games.Max(g => g.Price);
+            Console.WriteLine($"Max Price: {maxPrice}");
+
+            //game with best rating 
+            var bestRatedGame = games.Max(g => g.Rating);
+            var bestRatedGameDetails = games.First(g => g.Rating == bestRatedGame);
+            Console.WriteLine($"Best Rated Game: {bestRatedGameDetails.Title} with Rating: {bestRatedGameDetails.Rating}");
         }
     }
 }
