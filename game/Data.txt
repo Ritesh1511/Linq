@@ -1,0 +1,7 @@
+| Title               | Genre      | Release Year | Rating | Price |
+| ------------------- | ---------- | ------------ | ------ | ----- |
+| The Legend of Zelda | Adventure  | 1986         | 9.5    | 60    |
+| Super Mario Bros.   | Platformer | 1985         | 9.2    | 50    |
+| Elden Ring          | RPG        | 2022         | 9.8    | 70    |
+| Stardew Valley      | Simulation | 2016         | 9.0    | 15    |
+| Tetris              | Puzzle     | 1984         | 8.9    | 10    |

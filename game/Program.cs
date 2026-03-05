@@ -216,11 +216,11 @@ namespace game
 
 
 
-            // Average 
+            //Average 
             var averagePrice = games.Average(g => g.Price);
             Console.WriteLine($"Average Price: {averagePrice}");
 
-            // Max 
+            //Max 
             var maxPrice = games.Max(g => g.Price);
             Console.WriteLine($"Max Price: {maxPrice}");
 
@@ -228,6 +228,13 @@ namespace game
             var bestRatedGame = games.Max(g => g.Rating);
             var bestRatedGameDetails = games.First(g => g.Rating == bestRatedGame);
             Console.WriteLine($"Best Rated Game: {bestRatedGameDetails.Title} with Rating: {bestRatedGameDetails.Rating}");
+
+            //
+            var gamesByGroup = games.GroupBy(g => g.Genre);
+            foreach (var game in gamesByGroup)
+            {
+                Console.WriteLine($"Genre: {game.Key}, Count: {game.Count()}");
+            }
         }
     }
 }
